@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Расчет топлива</title>
-    <link rel="stylesheet" href="/css/fuel.css">
+    <!-- <base href="http://fuelandbrakes.ml/"> -->
+    <link rel="stylesheet" href="css/fuel.css">    <!-- добавить оп завершению правильный путь -->
     <meta name="description" content="Калькулятор для подсчета расхода торлива на участках обслуживания. Расчет справок ВУ-45.">
     <meta name="keywords" content="Калькулятор.Топливо. ВУ-45">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon/logo fuel.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon/logo fuel.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
-    test fuel
+    <div id="wrapper">
+        <div id="content">
+            <header>
+                <div>
+                    <p>Расчет расхода топлива</p>
+                </div>
+            </header>
+            <article>
+                <section id="tra">
+                    <table>
+                        <tr>
+                            <td>Вес</td>
+                            <td><input type="number" id="n1" size="20" placeholder="брутто" name="num" min="1" max="5000" type="tel" required></td>
+                            <td><button id="btn" onclick="multiply1()">Перемножить</button></td>
+                        </tr>
+                        <tr>
+                            <td>Расстояние</td>
+                            <td><input type="number" id="n2" size="20" placeholder="км" name="num" min="1" max="250" type="tel" required></td>
+                            <td>Итого</td>
+                        </tr>
+                        <tr>
+                            <td>Коэфициент</td>
+                            <td><input type="number" id="n3" size="20" placeholder="по талбице" name="num" min="1" max="250" type="tel" required></td>
+                            <td><div id="out1"></div></td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="lok">
+
+                </section>
+            </article>
+        </div>
+        <footer>
+            <table>
+                <tr>
+                    <td><a href="/index.html">На главную</a></td>
+                    <td><a href="/site pages/vu45.html">К сасчету справки ВУ-45</a></td>
+                    <td><a href="/site pages/about.html">О проэкте</a></td>
+                </tr>
+            </table>
+        </footer>
+    </div>
 </body>
 </html>
