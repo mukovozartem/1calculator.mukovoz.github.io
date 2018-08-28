@@ -25,7 +25,7 @@ body, html{
 }
 
 a{
-    color: black;
+    color: #0f0f0f;
     text-decoration: none;
     transition: all.3s ease;
     -ms-transition: all.3s ease;
@@ -59,7 +59,7 @@ img{
     flex: 1 0 auto;
 }
 
-/* ----------------------------------------------------------------- Стили к header */
+/* ----------------------------------------------------------------- header */
 
 header{
     float: left;
@@ -80,32 +80,243 @@ header>div{
     width: 96%;
 }
 
-/* ----------------------------------------------------------------- Стили к article */
+/* ----------------------------------------------------------------- article */
 
-#fuelcalc, #vucalc, #aboutus{
-    width: 96%;
-    margin: 1%;
-    margin-top: 0px;
-    padding: 1%;
-    height: 90px;
-    float: left;
-    background-color: #848388;
-    color: #373737;
-    font-size: 75px;
-    border-radius: 25px;
-    text-align: center;
+@media (min-width: 1201px) {
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 90px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 75px;
+        border-radius: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1011px) and (max-width: 1200px) {
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 100px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 67px;
+        border-radius: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1010px) {
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 110px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 59px;
+        border-radius: 25px;
+        text-align: center;
+    }
+    #btn{
+        padding-top: 2%;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 850px) {
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 115px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 50px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    #btn{
+        padding-top: 3%;
+    }
+}
+
+@media (min-width: 591px) and (max-width: 729px) {
+    header{
+        font-size: 45px;
+    }
+    
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 125px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 40px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    #btn{
+        padding-top: 4%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 590px) {
+    header{
+        font-size: 40px;
+    }
+
+    header>div{
+        padding-top: 1%;
+    }
+
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 130px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 35px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    #btn{
+        padding-top: 4%;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 576px) {
+    header{
+        font-size: 40px;
+    }
+
+    header>div{
+        padding-top: 1%;
+    }
+
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 135px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 35px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    #btn{
+        padding-top: 7%;
+    }
+
+    #footerdeveloper{
+        float: left;
+        font-size: 15px;
+        padding-top: 3px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 489px) {
+    header{
+        font-size: 30px;
+    }
+
+    header>div{
+        padding-top: 3%;
+    }
+
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 135px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 35px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    #btn{
+        padding-top: 5%;
+    }
+    
+    #footerdeveloper{
+        float: left;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    header{
+        font-size: 23px;
+    }
+
+    header>div{
+        padding-top: 7%;
+    }
+
+    #fuelcalc, #vucalc, #aboutus{
+        width: 96%;
+        margin: 1%;
+        margin-top: 0px;
+        padding: 1%;
+        height: 150px;
+        float: left;
+        background-color: #848388;
+        color: #373737;
+        font-size: 30px;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    #btn{
+        padding-top: 5%;
+    }
+
+    #footerdeveloper{
+        float: left;
+        font-size: 11px;
+        padding-top: 5px;
+    }
 }
 
 #img{
     float: left;
-    width: 90px;
+    height: 100%;
 }
 
 div#img>img{
-    width: 90px;
+    height: 100%;
 }
 
-/* ----------------------------------------------------------------- Стили к footer */
+/* ----------------------------------------------------------------- footer */
 
 footer{
     width: 96%;
@@ -130,11 +341,16 @@ footer{
     padding-right: 15px;
 }
 
-#footerlogo>a#logo>img{
-    width: 25px;
-    padding-left: 15px;
+@media (min-width: 576px){
+    #footerlogo>a#logo>img{
+        width: 25px;
+        padding-left: 15px;
+    }
 }
 
-#logo{
-    padding-right: 1px;
+@media (min-width: 300px) and (max-width: 575px){
+    #footerlogo>a#logo>img{
+        width: 25px;
+        padding-left: 1px;
+    }
 }
