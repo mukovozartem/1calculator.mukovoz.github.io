@@ -18,7 +18,7 @@ font-family: 'Roboto Slab', serif;
     padding: 0px;
 }
 
-body{
+body, html{
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -49,6 +49,16 @@ img{
     width: auto\9;
 }
 
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content{
+    flex: 1 0 auto;
+}
+
 /* ----------------------------------------------------------------- Стили к header */
 
 header{
@@ -77,22 +87,22 @@ header>div{
     margin: 1%;
     margin-top: 0px;
     padding: 1%;
-    height: 115px;
+    height: 90px;
     float: left;
     background-color: #848388;
     color: #373737;
-    font-size: 90px;
+    font-size: 75px;
     border-radius: 25px;
     text-align: center;
 }
 
 #img{
     float: left;
-    width: 115px;
+    width: 90px;
 }
 
 div#img>img{
-    width: 115px;
+    width: 90px;
 }
 
 /* ----------------------------------------------------------------- Стили к footer */
@@ -102,11 +112,11 @@ footer{
     margin: 1%;
     margin-top: 0px;
     padding: 1%;
-    height: 50px;
+    height: 25px;
     float: left;
     background-color: #b7b7af;
     color: #373737;
-    font-size: 45px;
+    font-size: 20px;
     border-radius: 25px;
     text-align: center;
 }
@@ -117,8 +127,14 @@ footer{
 
 #footerlogo{
     float: right;
+    padding-right: 15px;
 }
 
 #footerlogo>a#logo>img{
-    width: 45px;
+    width: 25px;
+    padding-left: 15px;
+}
+
+#logo{
+    padding-right: 1px;
 }
